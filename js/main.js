@@ -8,9 +8,11 @@ const invitedUsers = ["Emanuele", "Antonio", "Tiziano", "Giuseppe", "Enrico"];
 
 // ! SVOLGIMENTO
 
-invitedUsers.includes(prompt("Inserisci il tuo nome:"))
-  ? "Congratulazioni, sei invitato alla festa"
-  : "Mi dispiace non sei invitato";
+console.log(
+  invitedUsers.includes(prompt("Inserisci il tuo nome:"))
+    ? "Congratulazioni, sei invitato alla festa"
+    : "Mi dispiace non sei invitato"
+);
 
 // ! TRACCIA
 /* Gioco dei dadi
