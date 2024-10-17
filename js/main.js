@@ -14,10 +14,18 @@ const emails = [
 
 // ! SVOLGIMENTO
 
+let isMailAccepted = false;
+let userMail = prompt("Inserisci la tua email:");
+while (!isMailAccepted) {
+  userMail.includes("@" && ".")
+    ? (isMailAccepted = true)
+    : (userMail = prompt("Inserisci una mail valida!"));
+}
+
 console.log(
-  emails.includes(prompt("Inserisci la tua email:"))
+  emails.includes(userMail)
     ? "Login effettuato!"
-    : "Email non valida, registrati prima di accedere"
+    : "Email non presente nei nostri database, registrati prima di accedere"
 );
 
 // ! TRACCIA
