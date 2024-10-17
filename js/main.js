@@ -8,12 +8,12 @@ const invitedUsers = ["Emanuele", "Antonio", "Tiziano", "Giuseppe", "Enrico"];
 
 // ! SVOLGIMENTO
 
-/* console.log(
+console.log(
   invitedUsers.includes(prompt("Inserisci il tuo nome:"))
     ? "Congratulazioni, sei invitato alla festa"
     : "Mi dispiace non sei invitato"
 );
- */
+
 // ! TRACCIA
 /* Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
@@ -23,14 +23,24 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto. */
 
 const userNumber = Math.ceil(Math.random() * 6);
 const pcNumber = Math.ceil(Math.random() * 6);
-const result = "";
+let result = "";
 
 if (userNumber > pcNumber) {
-  result = "Complimenti, hai vinto!";
+  result = "Complimenti, hai vinto!          ";
 } else if (pcNumber > userNumber) {
   result = "Sfortunato, ha vinto il computer!";
 } else {
-  result = "Finisce in pareggio!";
+  result = "Finisce in pareggio!             ";
 }
 
 // ! OUTPUT
+
+console.log(`
+|*************************************************|
+|************| PC |*************| TU |************|
+|************|  ${pcNumber} |*************|  ${userNumber} |************|
+|*************************************************|
+|   RISULTATO: ${result}  |
+`);
+
+/* l'ho voluto fare "carino" */
