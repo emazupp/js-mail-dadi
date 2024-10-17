@@ -3,7 +3,14 @@
 Chiedi all'utente la sua email,
 controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull'esito del controllo. */
+
+const invitedUsers = ["Emanuele", "Antonio", "Tiziano", "Giuseppe", "Enrico"];
+
 // ! SVOLGIMENTO
+
+invitedUsers.includes(prompt("Inserisci il tuo nome:"))
+  ? "Congratulazioni, sei invitato alla festa"
+  : "Mi dispiace non sei invitato";
 
 // ! TRACCIA
 /* Gioco dei dadi
