@@ -4,14 +4,20 @@ Chiedi all'utente la sua email,
 controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull'esito del controllo. */
 
-const invitedUsers = ["Emanuele", "Antonio", "Tiziano", "Giuseppe", "Enrico"];
+const emails = [
+  "ema@email.com",
+  "ema@email.com",
+  "ema@email.com",
+  "ema@email.com",
+  "ema@email.com",
+];
 
 // ! SVOLGIMENTO
 
 console.log(
-  invitedUsers.includes(prompt("Inserisci il tuo nome:"))
-    ? "Congratulazioni, sei invitato alla festa"
-    : "Mi dispiace non sei invitato"
+  emails.includes(prompt("Inserisci la tua email:"))
+    ? "Login effettuato!"
+    : "Email non valida, registrati prima di accedere"
 );
 
 // ! TRACCIA
