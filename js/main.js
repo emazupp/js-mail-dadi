@@ -6,10 +6,10 @@ stampa un messaggio appropriato sull'esito del controllo. */
 
 const emails = [
   "ema@email.com",
-  "ema@email.com",
-  "ema@email.com",
-  "ema@email.com",
-  "ema@email.com",
+  "deb@email.com",
+  "sis@email.com",
+  "tiz@email.com",
+  "enr@email.com",
 ];
 
 // ! SVOLGIMENTO
