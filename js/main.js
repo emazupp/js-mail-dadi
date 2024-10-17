@@ -23,5 +23,14 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto. */
 
 const userNumber = Math.ceil(Math.random() * 6);
 const pcNumber = Math.ceil(Math.random() * 6);
+const result = "";
 
-console.log(userNumber);
+if (userNumber > pcNumber) {
+  result = "Complimenti, hai vinto!";
+} else if (pcNumber > userNumber) {
+  result = "Sfortunato, ha vinto il computer!";
+} else {
+  result = "Finisce in pareggio!";
+}
+
+// ! OUTPUT
