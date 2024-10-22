@@ -17,7 +17,7 @@ const emails = [
 let isMailAccepted = false;
 let userMail = prompt("Inserisci la tua email:");
 while (!isMailAccepted) {
-  userMail.includes("@" && ".")
+  userMail.includes("@") && userMail.includes(".")
     ? (isMailAccepted = true)
     : (userMail = prompt("Inserisci una mail valida!"));
 }
